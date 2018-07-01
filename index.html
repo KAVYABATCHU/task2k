@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body><center>
+  <video id="vid" src="video/videoplayback.mp4" autoplay controls="controls" loop>
+ </video>
+ <button type="button" name="button" onclick="vpause()">pause</button>
+<button type="button" name="button" onclick="vplay()">play</button>
+
+<script type="text/javascript">
+function vpause(){
+var video=document.getElementById("vid");
+video.pause();
+}
+</script>
+<script type="text/javascript">
+function vplay(){
+var video=document.getElementById("vid");
+video.play();
+}
+</script>
+<audio id="aid" src="SleepAway.mp3" autoplay controls="controls" loop></audio>
+<button type="button" name="button" onclick="pause()">pause</button>
+<button type="button" name="button" onclick="play()">play</button>
+
+<script type="text/javascript">
+function pause(){
+var aid=document.getElementById("aid");
+aid.pause();
+}
+function play(){
+var aid=document.getElementById("aid");
+aid.play();
+}
+</script>
+</center>
+</body>
+</html>
